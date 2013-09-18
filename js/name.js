@@ -1,45 +1,68 @@
-var phoneticAlphabet = ["alpha", "bravo", "delta", "echo", "foxtrot", "golf", "hotel", "india", "juliett", "kilo", "mike", "november", "oscar", "papa", "quebec", "romeo", "sierra", "tango", "uniform", "victor", "whiskey", "xray", "zulu"]
-var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+var phoneticAlphabet = ["alpha", "bravo", "delta", "echo", "foxtrot",
+ "golf", "hotel", "india", "juliett", "kilo", "mike", "november",
+  "oscar", "papa", "quebec", "romeo", "sierra", "tango", "uniform",
+   "victor", "whiskey", "xray", "zulu"];
 
 
-var name = "michele"
-var splitName = name.split("")
+var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k",
+ "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-var phoneticName
 
+var name = "michele";
+var splitName = name.split("");
+var phoneticName;
+
+var i = 0;
+
+//
+console.log(name)
 console.log(splitName)
+console.log(splitName.index(0))
+console.log(alphabet.indexOf("a"))
+console.log(phoneticAlphabet.index[0])
 
-/*function test() {
-    var phoneticName = splitName.replace(/m/g, "b");
+
+//console.log(phoneticAlphabet.index(alphabet.indexOf(splitName.index[i])))
+
+
+
+
+//phoneticAlphabet.index(alphabet.indexOf(splitName.index[0]))
+
+
+//console.log(alphabet.indexOf("c"))
+
+
+
+
+/* (trying to do the whole design recipe thing over here)
+
+
+String -> String
+
+consumes a string, finds the index position of each
+letter in the alphabet array, and returns the words
+of the same index position in the phonetic alphabet array as one string
+
+phoneticize("michele") = ("mike india charlie hotel echo lima echo")
+phoneticize("hey you") = ("hotel echo yankee yankee oscar uniform")
+
+
+function phoneticize(str) (str) - stub
+function phoneticize(str) (...str) - template
+
+function phoneticize(str) (
+	str.split 
+
+)
+
+while (i < fish.length) { console.log(fish[i]); i += 1;
 }
 
-console.log(phoneticName)
-
-console.log(phoneticAlphabet[0]) */
-
-function logArrayElements(element, index, array) {
-	console.log("a[" + index + "] = " + element);
-}
-
-splitName.forEach ()
-
-if splitName
 
 
 
-
-
-// Match one d followed by one or more b's followed by one d
-// Remember matched b's and the following d
-// Ignore case
-
-//var myRe = /d(b+)(d)/i;
-//var myArray = myRe.exec("cdbBdbsbz");
-
-
-//console.log(splitName.splice(alphabet, phoneticAlphabet))
-
-//console.log(splitName.indexOf("i"))
 
 
 
