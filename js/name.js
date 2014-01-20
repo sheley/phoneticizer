@@ -1,39 +1,53 @@
 
-var phoneticAlphabet = ["alpha", "bravo", "delta", "echo", "foxtrot",
- "golf", "hotel", "india", "juliett", "kilo", "mike", "november",
-  "oscar", "papa", "quebec", "romeo", "sierra", "tango", "uniform",
-   "victor", "whiskey", "xray", "zulu"];
-
-
-var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k",
- "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-
+var phoneticAlphabet = {
+  "a":"alpha",
+  "b":"bravo",
+  "c":"charlie",
+  "d":"delta",
+  "e":"echo",
+  "f":"foxtrot",
+  "g":"golf",
+  "h":"hotel",
+  "i":"india",
+  "j":"juliett",
+  "k":"kilo",
+  "m":"mike",
+  "n":"november",
+  "o":"oscar",
+  "p":"papa",
+  "q":"quebec",
+  "r":"romeo",
+  "s":"sierra",
+  "t":"tango",
+  "u":"uniform",
+  "v":"victor",
+  "w":"whiskey",
+  "x":"xray",
+  "z":"zulu"};
 
 var name = "michele";
-var splitName = name.split("");
-var phoneticName;
-
-var i = 0;
-
-//
-console.log(name)
-console.log(splitName)
-console.log(splitName.index(0))
-console.log(alphabet.indexOf("a"))
-console.log(phoneticAlphabet.index[0])
 
 
-//console.log(phoneticAlphabet.index(alphabet.indexOf(splitName.index[i])))
+// var message = prompt("write your message");
 
+message = prompt("Type your message")
 
+splitName = function(message) {
+  arrayOfLetters = message.toLowerCase().split("");
+  return arrayOfLetters;
+}
 
+function phoneticize(letter) {
+  var result = phoneticAlphabet[letter]
+  return result;
+}
 
-//phoneticAlphabet.index(alphabet.indexOf(splitName.index[0]))
+console.log(splitName(message).map(phoneticize));
 
+// var words = ["foot", "goose", "moose", "kangaroo"];
+// console.log(words.map(fuzzyPlural));
 
-//console.log(alphabet.indexOf("c"))
-
-
+// ["feet", "geese", "meese", "kangareese"]
 
 
 /* (trying to do the whole design recipe thing over here)
@@ -53,7 +67,7 @@ function phoneticize(str) (str) - stub
 function phoneticize(str) (...str) - template
 
 function phoneticize(str) (
-	str.split 
+	str.split
 
 )
 
